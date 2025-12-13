@@ -6,6 +6,7 @@
     <title>Mantenimiento</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fnt/css/fontello.css">
+    <link rel="icon" type="image/png" href="css/favicon.png">
     <script src="js/ff.js" defer></script>
 </head>
 
