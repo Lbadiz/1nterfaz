@@ -2,11 +2,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Mantenimiento</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" content="text-css" href="css/style.css" />
     <link rel="stylesheet" href="fnt/css/fontello.css">
     <link rel="icon" type="image/png" href="css/favicon.png">
+    <script src="js/ll.js" defer></script>
     <script src="js/ff.js" defer></script>
 </head>
 
@@ -14,12 +16,12 @@
     <!-- Menú lateral -->
     <aside class="sidebar" id="sidebar">
         <span id="menu-control" class="icon-ocultar" onclick="menulat(0)"></span>
-        <ul class="menu">
-            <li><a href="index.php?sec=man"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de mantenimiento<span></a></li>
-            <li><a href="index.php?sec=com"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de combustible<span></a></li>
-            <li><a href="index.php?sec=rep"><span class="icon-report"></span> <span class="menu-item">Reportes</span></a></li>
-            <li><a href="index.php?sec=uni"><span class="icon-unidades"></span> <span class="menu-item">Unidades</span></a></li>
-            <li><a href="index.php?sec=con"><span class="icon-conf"></span> <span class="menu-item">Configuración</span></a></li>
+        <ul class="menu" id="menuprincipal">
+            <li id="menuBitacoramantenimiento"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de mantenimiento<span></li>
+            <li id="menuBitacoracombustible"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de combustible<span></li>
+            <li id="menuReportes"><span class="icon-report"></span> <span class="menu-item">Reportes</span></li>
+            <li id="menuUnidades"><span class="icon-unidades"></span> <span class="menu-item">Unidades</span></li>
+            <li id="menuConfiguracion"><span class="icon-conf"></span> <span class="menu-item">Configuración</span></li>
         </ul>
 
         <!-- Perfil usuario -->
@@ -36,17 +38,16 @@
     <!-- Contenido principal -->
     <main class="contenido">
 
-        <section class="titulo">
-            Sistema Gestor de Mantenimiento
+        <section class="titulo" id="tituloModulo">
+            
         </section>
 
-        <section class="cards">
-            <div class="card">Combustible</div>
-            <div class="card">Mantenimiento</div>
+        <section class="cards" id="submenu">
+            
         </section>
 
-        <section class="resultado">
-
+        <section id="resultado" class="resultado">
+            
         </section>
 
     </main>
