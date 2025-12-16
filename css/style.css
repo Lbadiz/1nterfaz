@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -13,7 +14,8 @@ a {
 /*Menu Principal*/
 
 .sidebar {
-  background-color: #212121; /* negro */
+  background-color: #212121;
+  /* negro */
   width: 260px;
   color: #fff;
   height: 100vh;
@@ -42,6 +44,10 @@ a {
   cursor: pointer;
   transition: background 0.3s;
   border-radius: 15px;
+}
+
+.menu li.active {
+  color: #e53935;
 }
 
 .menu li:hover {
@@ -80,7 +86,8 @@ a {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #e53935; /* rojo */
+  background-color: #e53935;
+  /* rojo */
   cursor: pointer;
   border: 2px solid #fff;
   background-image: url(auxiliar3.png);
@@ -98,15 +105,20 @@ a {
   margin: 10px 0 0 0;
   background-color: #333;
   border-radius: 8px;
-  max-height: 0; /* oculto */
-  overflow: hidden; /* evita desbordes */
-  opacity: 0; /* invisible */
+  max-height: 0;
+  /* oculto */
+  overflow: hidden;
+  /* evita desbordes */
+  opacity: 0;
+  /* invisible */
   transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 
 .perfil-menu.show {
-  max-height: 200px; /* se expande hacia abajo */
-  opacity: 1; /* aparece */
+  max-height: 200px;
+  /* se expande hacia abajo */
+  opacity: 1;
+  /* aparece */
 }
 
 .perfil-menu li {
@@ -131,13 +143,13 @@ a {
 }
 
 /*Cuerpo*/
-
 .contenido {
   flex: 1;
   display: grid;
   grid-template-rows: 50px 30px auto;
   background: #f5f5f5;
-  padding: 0px;
+  padding: 4px;
+  gap: 5px;
   height: 99vh;
 }
 
@@ -158,6 +170,13 @@ a {
   border-radius: 5px;
   padding: 2px 5px;
   text-align: center;
+}
+
+.card.active {
+  background-color: #ff4d4d;
+  color: #FFF;
+  border-style: inset;
+  border-color: #f5f5f5;
 }
 
 .card:hover {
@@ -266,12 +285,16 @@ td {
 #ventana-emergente {
   margin: auto;
   margin-top: 50px;
-  background-color: #fff; /* Fondo blanco para el contenido */
+  background-color: #fff;
+  /* Fondo blanco para el contenido */
   padding: 20px;
-  border-radius: 8px; /* Bordes suaves */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  border-radius: 8px;
+  /* Bordes suaves */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* Sombra sutil */
   max-width: 500px;
-  width: 90%; /* Ancho responsivo */
+  width: 90%;
+  /* Ancho responsivo */
   height: auto;
   overflow-y: auto;
   position: relative;
@@ -280,12 +303,16 @@ td {
 
 #cerrar-modal {
   position: absolute;
-  top: -15px; /* Sube 15px por encima del borde superior */
-  right: -15px; /* Mueve 15px a la derecha del borde derecho */
-  background-color: #ff4d4d; /* Rojo para llamar la atención */
+  top: -15px;
+  /* Sube 15px por encima del borde superior */
+  right: -15px;
+  /* Mueve 15px a la derecha del borde derecho */
+  background-color: #ff4d4d;
+  /* Rojo para llamar la atención */
   color: white;
   border: none;
-  border-radius: 50%; /* Botón redondo */
+  border-radius: 50%;
+  /* Botón redondo */
   width: 40px;
   height: 40px;
   font-size: 24px;

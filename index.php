@@ -17,11 +17,11 @@
     <aside class="sidebar" id="sidebar">
         <span id="menu-control" class="icon-ocultar" onclick="menulat(0)"></span>
         <ul class="menu" id="menuprincipal">
-            <li id="menuBitacoramantenimiento"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de mantenimiento<span></li>
-            <li id="menuBitacoracombustible"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de combustible<span></li>
-            <li id="menuReportes"><span class="icon-report"></span> <span class="menu-item">Reportes</span></li>
-            <li id="menuUnidades"><span class="icon-unidades"></span> <span class="menu-item">Unidades</span></li>
-            <li id="menuConfiguracion"><span class="icon-conf"></span> <span class="menu-item">Configuración</span></li>
+            <li id="menuBitacoramantenimiento" onclick="moduloMantenimiento()"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de mantenimiento<span></li>
+            <li id="menuBitacoracombustible" onclick="moduloCombustible()"><span class="icon-bitacora"></span> <span class="menu-item">Bitácora de combustible<span></li>
+            <li id="menuReportes" onclick="moduloReportes()"><span class="icon-report"></span> <span class="menu-item">Reportes</span></li>
+            <li id="menuUnidades" onclick="moduloUnidades()"><span class="icon-unidades"></span> <span class="menu-item">Unidades</span></li>
+            <li id="menuConfiguracion" onclick="moduloConfiguracion()"><span class="icon-conf"></span> <span class="menu-item">Configuración</span></li>
         </ul>
 
         <!-- Perfil usuario -->
